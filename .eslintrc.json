@@ -1,0 +1,23 @@
+{
+  "env": {
+    "es6": true
+  },
+  "extends": ["airbnb-base", "plugin:cypress/recommended"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["cypress"],
+  "rules": {
+    "spaced-comment": 0,
+    "no-unused-expressions": 0,
+    "space-before-function-paren": ["error", "never"],
+    "prefer-arrow-callback": 0,
+    "func-names": 0,
+    "class-methods-use-this": 0
+  }
+}

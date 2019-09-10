@@ -1,0 +1,8 @@
+{
+  "baseUrl": "https://www.frys.com",
+  "env": {
+    "email": "testman@restmail.net",
+    "pw": "Test1234",
+    "restmail": "http://restmail.net/mail"
+  }
+}
