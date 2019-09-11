@@ -4,5 +4,9 @@
     "email": "testman@restmail.net",
     "pw": "Test1234",
     "restmail": "http://restmail.net/mail"
+  },
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "results/mocha/test.xml"
   }
 }
