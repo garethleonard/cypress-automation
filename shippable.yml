@@ -1,0 +1,17 @@
+language: node_js
+
+node_js:
+  - 10
+
+build:
+  # Caching configuration to avoid reinstalling node modules and Cypress binary again and again
+  # http://docs.shippable.com/ci/caching/
+  cache: true
+  cache_dir_list:
+    - /root/.npm
+    - /root/.cache
+  ci:
+    - sudo apt-get update --yes
+    - sudo apt-get install --yes --reinstall libnss3
+    - npm ci
+    - npm test
